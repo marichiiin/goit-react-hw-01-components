@@ -18,11 +18,11 @@ export const App = () => {
         stats = {user.stats}
       />
       <FriendLists 
-        avatar = {friends.avatar} 
+        friendsAvatar = {friends.avatar} 
         name = {friends.name}
         isOnline = {friends.isOnline}
         id = {friends.id}
-      />;
+      />
       <Statistics
         statsId = {datas.id}
         label = {datas.label}
