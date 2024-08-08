@@ -7,6 +7,9 @@ import datas from '../data/data.json';
 import { FriendLists } from "./FriendList/FriendList"
 import friends from '../data/friends.json'
 
+import { TransactionHistory } from "./Transaction/Transactions"
+import transactions from '../data/transactions.json';
+
 export const App = () => {
   return (
     <>
@@ -17,19 +20,12 @@ export const App = () => {
         avatar = {user.avatar}
         stats = {user.stats}
       />
-      <FriendLists 
-        friendsAvatar = {friends.avatar} 
-        name = {friends.name}
-        isOnline = {friends.isOnline}
-        id = {friends.id}
-      />
-      <Statistics
-        statsId = {datas.id}
-        label = {datas.label}
-        percentage = {datas.percentage}
-      />
+      
+      <Statistics title="Upload Stats" stats={datas}/>
+      <FriendLists friends = {friends}/>
+      <TransactionHistory items={transactions} />
 
-  </>
+    </>
   )
 }
 

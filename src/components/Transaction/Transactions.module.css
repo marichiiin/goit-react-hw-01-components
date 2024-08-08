@@ -1,0 +1,28 @@
+.transactionHistory {
+    width: 50%;
+    background-color: #f4f4fd;
+    margin: auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.tableHeader {
+    height: 50px;
+    background-color: #8383a5;
+    
+    
+}
+
+.tableBody tr:nth-child(even){
+    background-color: #e7d2d2;
+}
+
+
+.tableData {
+    text-align: center;
+    vertical-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
